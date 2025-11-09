@@ -2,8 +2,8 @@
 Clase Trabajador - Hereda de Usuario
 Sistema de Gestión de Producción de Orellanas
 
-Autor: [Tu nombre]
-Fecha: Noviembre 2024
+
+Fecha: Noviembre 2025
 """
 
 from clases.usuario import Usuario
@@ -227,3 +227,4 @@ Estanterías asignadas: {len(self.__estanterias_asignadas)}
     def __str__(self) -> str:
         """Representación en string del trabajador."""
         return f"Trabajador({self.get_nombre_completo()}, turno={self.__turno})"
+
