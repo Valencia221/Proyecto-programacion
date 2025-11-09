@@ -85,3 +85,35 @@ def crear_instancias_estudiante_1():
     
     return trabajador1, estanteria1, supervisor1
 
+def crear_instancias_estudiante_2():
+    imprimir_separador("INSTANCIAS DEL ESTUDIANTE 2")
+    print("\n4️ Creando Trabajador...")
+    trabajador2 = Trabajador(
+        nombre="María",
+        apellido="González",
+        username="mgonzalez",
+        password="segura456",
+        email="maria.gonzalez@orellanas.com",
+        turno="tarde"
+    )
+    print(f"  {trabajador2}")
+    
+    print("\n5️⃣ Creando Jefe de Planta...")
+    jefe1 = JefePlanta(
+        nombre="Ana",
+        apellido="Martínez",
+        username="amartinez",
+        password="jefe456",
+        email="ana.martinez@orellanas.com"
+    )
+    print(f"  {jefe1}")
+    
+    print("\n6️⃣ Creando Estantería...")
+    estanteria2 = Estanteria("0002")
+    print(f" {estanteria2}")
+    print(f" - Pisos creados: {Estanteria.NUMERO_PISOS}")
+    print(f" - Tubulares totales: {estanteria2.contar_tubulares_total()}")
+    
+    return trabajador2, jefe1, estanteria2
+
+
