@@ -52,12 +52,10 @@ Selecciona una opción:
 
 
 def crear_instancias_estudiante_1():
-    """
-    CREA LAS 3 INSTANCIAS DEL ESTUDIANTE 1 (TÚ)
-    """
-    imprimir_separador("🎓 INSTANCIAS DEL ESTUDIANTE 1")
+   
+    imprimir_separador("INSTANCIAS DEL ESTUDIANTE 1")
     
-    print("\n1️⃣ Creando Trabajador (Estudiante 1)...")
+    print("\n1️ Creando Trabajador...")
     trabajador1 = Trabajador(
         nombre="Juan",
         apellido="Pérez",
@@ -66,15 +64,15 @@ def crear_instancias_estudiante_1():
         email="juan.perez@orellanas.com",
         turno="mañana"
     )
-    print(f" ✅ {trabajador1}")
+    print(f"  {trabajador1}")
     
-    print("\n2️⃣ Creando Estantería (Estudiante 1)...")
+    print("\n2️ Creando Estantería...")
     estanteria1 = Estanteria("0001")
-    print(f" ✅ {estanteria1}")
+    print(f"  {estanteria1}")
     print(f"   - Pisos creados: {Estanteria.NUMERO_PISOS}")
     print(f"   - Tubulares totales: {estanteria1.contar_tubulares_total()}")
     
-    print("\n3️⃣ Creando Supervisor (Estudiante 1)...")
+    print("\n3️ Creando Supervisor...")
     supervisor1 = Supervisor(
         nombre="Carlos",
         apellido="Ramírez",
@@ -83,6 +81,7 @@ def crear_instancias_estudiante_1():
         email="carlos.ramirez@orellanas.com",
         area="Producción"
     )
-    print(f" ✅ {supervisor1}")
+    print(f" {supervisor1}")
     
     return trabajador1, estanteria1, supervisor1
+
